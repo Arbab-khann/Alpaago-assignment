@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282539;
+    font-family: arial;
+  } */
+.loginform,
+.register-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../weather/img.jpg");
+  position: relative;
+
+  color: #fff;
+}
+.loginform:before,
+.register-form:before {
+}
+
+.main {
+  width: 40rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4a4848;
+  max-height: 30rem;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px #33333428;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  /* width: 60%; */
+  background-color: #4a4848;
+}
+
+/*checkbox to switch from sign up to login*/
+#chk {
+  display: none;
+}
+
+/*Login*/
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login label {
+  margin: 2% 0 5%;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  background: #cacaca;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+}
+
+/*Register*/
+.register {
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(5%);
+  transition: 0.8s ease-in-out;
+}
+.log-in,
+.register-btn {
+  color: #ffffff;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.register label {
+  color: #ffffff;
+  /* transform: scale(0.6); */
+}
+
+/* #chk:checked ~ .register {
+    transform: translateY(-65%);
+  } */
+
+#chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 0% 0 5%;
+}
+
+#chk:checked ~ .login label {
+  transform: scale(0.6);
+  margin: 5% 0 5%;
+}
+/*Button*/
+.form button {
+  width: 85%;
+  height: 40px;
+  margin: 12px auto 10%;
+  color: #fff;
+  background: rgb(134, 131, 139);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.form button:hover {
+  background-color: rgb(109, 107, 112);
+}
+
+/* home compo style */
+
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 4rem;
+  /* border: 5px solid red; */
+  width: 100%;
+  height: 30rem;
+  background-color: #e0dede;
+  padding: 3rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  box-shadow: 0px 0px 10px 30px #3d3b3e28;
+}
+
+.login-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 10rem;
+  margin-top: 5rem;
+}
+
+/* Style the button on hover */
+.login-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
